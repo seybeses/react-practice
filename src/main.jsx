@@ -1,8 +1,14 @@
-import { StrictMode } from 'react'
+
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+
 
 createRoot(document.getElementById('root')).render(
-  <h1>안녕 리액트!</h1>
-)
+<div id="root">
+  <h1 id="title">가위바위보 게임임</h1>
+  <h2>패를 골라주세요</h2>
+  <button className="hand">가위</button>
+  <button className="hand">바위</button>
+  <button className="hand">보</button>
+</div>
+
+);
